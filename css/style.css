@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+/*** FONTS ***/
+body
+{
+	font-family: 'Roboto', sans-serif;
+	
+}
+*
+{
+	
+	list-style: none;
+	padding:0;
+	margin:0;
+	
+}
+
+a
+{
+	text-decoration:none;
+	color: black;
+	
+}
+strong
+{
+	
+	text-decoration: none;
+}
+em
+{
+	
+	font-style: normal;
+}
+#body
+{
+    min-width: 236px;
+}
+/**** BASES ****/
+/*** LOADER ***/
+
+
+/************* LOGO HEADER *************/
+header 
+{
+    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    
+  padding-bottom: 10px;
+  padding-top: 20px;
+  box-shadow: 0px 2px 5px rgb(201, 201, 201);
+  position: relative;
+    
+}
+
+#logo /** taille du logo modifié **/
+{
+  width: 200px;
+}
+
+/************* Section localization **************/
+#localization
+{
+  width: 100%;
+    
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+    
+  background-color: rgb(234, 234, 234);
+    
+    
+}
+.localization
+{
+  font-weight: 500;
+  margin-left: 15px;
+  padding-right: 20px;
+  font-size: larger;
+}
+.fa-map-marker-alt
+{
+  font-size: larger;
+}
+
+/*********** Section restaurants ************/
+#explore_restaurants
+{
+    
+  width: 100%;
+   
+  text-align: center;
+  padding-top: 40px;
+  background-color: rgb(246, 246, 246);
+  height: 230px;
+}
+#explore_restaurants h2
+{
+  margin-bottom: 15px;
+  font-size: 28px;
+    
+}
+#explore_restaurants p 
+{
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+.buttons 
+{
+    
+  border-radius: 100px;
+  color: #fff;
+  background: linear-gradient(1deg,#9356DC,#FF79DA);
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0px 5px 5px lightgray;
+}
+.buttons:hover 
+{
+  background: linear-gradient(1deg,#9c5fe7,#fa8fdc);
+  transition: all 0.2s ease;
+  box-shadow: 0px 5px 8px rgb(165, 164, 164);
+   
+}
+
+/*********** TUTORIAL ************/
+#tutorial
+{
+ 
+}
+#tutorial_list
+{
+  margin-bottom: 60px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+  height: auto;
+}
+#tutorial h2
+{
+  padding-right: 30px;
+  
+  
+}
+.tutorial_list
+{
+  background-color: rgb(246, 246, 246);
+  
+  
+
+}
+/************* RESTAURANTS **************/
+#restaurants
+{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 25px 50px 25px;
+  margin: auto;
+  
+  background-color: rgb(246, 246, 246);
+  
+}
+.fa-heart
+{
+  width: auto;
+  
+  font-size: xx-large;
+  
+  
+ 
+}
+#restaurants h2
+{
+  width: 100%;
+  margin-bottom: 25px;
+  max-width: 768px;
+  font-size: 30px;
+}
+.hearts /*** LIEN FAVORIS COEUR ***/
+{
+  
+  
+  align-self: flex-end;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: -80px;
+  
+  
+  
+  
+}
+
+#restaurants h3
+{
+  width: 155px;
+  
+  margin: 20px 0px 5px 10px;
+}
+#restaurants p 
+{
+  width: 120px;
+  
+  margin-left: 10px;
+}
+#restaurants article
+{
+  width: 100%;
+  max-width: 768px;
+  height: 290px;
+  
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  box-shadow: gainsboro 0px 5px 5px;
+}
+#restaurants img 
+{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+    
+}
+
+/****************** FOOTER *****************/
+footer
+{
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  height: 210px;
+    
+    
+}
+#footer
+{
+    
+    
+  width: auto;
+  height: 200px;
+  max-width: 1280px;
+  margin: auto;
+    
+    
+}
+#footer h2
+{
+
+  font-family: 'Shrikhand', cursive;
+  font-weight: lighter;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+
+}
+footer ul li a
+{
+
+  color: #fff;
+    
+  font-family: 'Roboto', sans-serif;
+    
+}
+
+#footer ul 
+{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  margin-left: 20px;
+    
+}
+.fa-utensils
+{
+  padding-right: 7px;
+  color: #fff;
+}
+.fa-hands-helping
+{
+  font-size: small;
+  padding-right: 3px;
+  color: #fff;
+}
+#footer a:hover 
+{
+  color:  #9356DC;
+}
+
+/****************** MEDIA QUERIES *****************/
+@media all and (max-width: 322px)
+
+{
+  
+  #explore_restaurants
+  
+  {
+    height: 280px;
+    
+  }
+}
+  
