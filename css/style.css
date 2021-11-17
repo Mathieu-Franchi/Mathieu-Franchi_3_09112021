@@ -259,7 +259,7 @@ header
   width: 100%;
   max-width: 768px;
   height: 290px;
-  
+  position: relative;
   margin-bottom: 30px;
   
   display: flex;
@@ -276,6 +276,18 @@ header
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
     
+}
+.new
+{
+  position: absolute;
+  background-color: rgb(153, 226, 208);
+  color: rgb(0, 135, 102);
+  font-weight: 700;
+  border-radius: 3px;
+  top: 15px;
+  right: 15px;
+  padding: 10px 17px 10px 17px;
+  
 }
 
 /****************** FOOTER *****************/
