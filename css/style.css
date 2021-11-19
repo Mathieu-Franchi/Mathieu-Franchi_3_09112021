@@ -44,11 +44,13 @@ header
 {
     
   width: 100%;
+
   display: flex;
   justify-content: center;
     
   padding-bottom: 10px;
   padding-top: 20px;
+
   box-shadow: 0px 2px 5px rgb(201, 201, 201);
   position: relative;
     
@@ -66,6 +68,7 @@ header
     
   padding-top: 20px;
   padding-bottom: 20px;
+
   display: flex;
   justify-content: center;
     
@@ -75,40 +78,49 @@ header
 }
 .localization
 {
-  font-weight: 500;
-  margin-left: 15px;
-  padding-right: 20px;
   font-size: larger;
+  font-weight: 500;
+  
+  margin-left: 15px;
+  
+  padding-right: 20px;
+  
 }
 .fa-map-marker-alt
 {
   font-size: larger;
 }
 
-/*********** Section restaurants ************/
+/*********** Section explore_restaurants ************/
 #explore_restaurants
 {
     
   width: 100%;
-   
-  text-align: center;
-  padding-top: 40px;
-  background-color: rgb(246, 246, 246);
   height: 230px;
+  
+  text-align: center;
+  
+  padding-top: 40px;
+  
+  background-color: rgb(246, 246, 246);
+  
 }
 #explore_restaurants h2
 {
+ 
   margin-bottom: 15px;
+  
   font-size: 28px;
     
 }
 #explore_restaurants p 
 {
   margin-bottom: 40px;
+  
   font-weight: 300;
   font-size: 19px;
 }
-
+/*** BUTTON ***/
 .buttons 
 {
     
@@ -118,6 +130,7 @@ header
   font-size: 18px;
   padding: 10px 20px 10px 20px;
   box-shadow: 0px 5px 5px lightgray;
+  
 }
 .buttons:hover 
 {
@@ -131,23 +144,30 @@ header
 #tutorial
 {
   width: auto;
+  
   margin: auto;
+  
   padding: 50px 25px 50px 25px;
+  
   max-width: 768px;
 }
 #tutorial_list
 {
   
   width: 100%;
+  
   display: flex;
   flex-direction: column;
+  
   max-width: 400px;
   
 }
 #tutorial h2
 {
   font-size: 30px;
+  
   margin-bottom: 20px;
+  
   max-width: 768px;
   
 }
@@ -166,27 +186,31 @@ header
 }
 .tutorial_number
 {
-  border-radius: 50%;
   padding: 7px 10px 3px 10px;
+  
   position:relative;
   left: -45px;
+  
+  border-radius: 50%;
   background-color: rgb(147, 86, 220);
   color: #fff;
 }
 .fa-mobile-alt,.fa-list-ul,.fa-store
 {
   color: gray;
-  margin-left: -30px;
   font-size: large;
+
+  margin-left: -30px;
 }
 .steps
 {
   color: black ;
   font-size: 16px;
+  
   margin-left: 20px;
 }
 
-.tutorial_list:hover .fas
+.tutorial_list:hover .fas  
 {
   
   color: rgb(147, 86, 220) ;
@@ -196,70 +220,45 @@ header
 {
   background-color: rgb(245, 237, 255);
 }
+
 /************* RESTAURANTS **************/
+
 #restaurants
 {
   width: auto;
   height: auto;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   padding: 50px 25px 50px 25px;
+  
   margin: auto;
   
   background-color: rgb(246, 246, 246);
   
 }
-.fa-heart
-{
-  width: auto;
-  
-  font-size: xx-large;
-  
-  
- 
-}
+
 #restaurants h2
 {
   width: 100%;
+  
   margin-bottom: 25px;
+  
   max-width: 768px;
+  
   font-size: 30px;
-}
-.hearts /*** LIEN FAVORIS COEUR ***/
-{
-  
-  
-  align-self: flex-end;
-  padding-right: 35px;
-  padding-left: 100px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  margin-top: -80px;
-  
-  
-  
-  
-}
-
-#restaurants h3
-{
-  width: 155px;
-  
-  margin: 20px 0px 5px 10px;
-}
-#restaurants p 
-{
-  width: 120px;
-  
-  margin-left: 10px;
 }
 #restaurants article
 {
   width: 100%;
-  max-width: 768px;
   height: 290px;
+  
+  max-width: 768px;
+  
   position: relative;
+  
   margin-bottom: 30px;
   
   display: flex;
@@ -273,20 +272,77 @@ header
 {
   width: 100%;
   height: 200px;
+  
   object-fit: cover;
+  
   border-radius: 15px 15px 0px 0px;
     
 }
+#restaurants h3
+{
+  width: 155px;
+  
+  margin: 20px 0px 5px 10px;
+}
+#restaurants p 
+{
+  width: 120px;
+  
+  margin-left: 10px;
+}
+.fa-heart
+{
+  width: auto;
+  
+  font-size: xx-large;
+}
+.hearts /*** LIEN FAVORIS COEUR ***/
+{
+  align-self: flex-end;
+  
+  padding-right: 35px;
+  padding-left: 100px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  
+  margin-top: -80px;
+  
+}
+@keyframes progress-heart
+   {
+     to
+    {
+      font-weight: 900;
+      color: rgb(170, 9, 9);
+
+    }
+
+}
+.hearts:active .fa-heart
+{
+  animation-name: progress-heart;
+  
+  
+
+}
+
+
+
 .new
 {
   position: absolute;
+  
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
+  
   font-weight: 700;
   font-size: 17px;
+  
   border-radius: 3px;
+  
   top: 15px;
   right: 15px;
+  
   padding: 10px 17px 10px 17px;
   
 }
@@ -306,7 +362,9 @@ footer
     
   width: auto;
   height: 200px;
+  
   max-width: 1280px;
+  
   margin: auto;
     
     
@@ -317,8 +375,10 @@ footer
   font-family: 'Shrikhand', cursive;
   font-weight: lighter;
   color: #fff;
+  
   padding-top: 20px;
   padding-bottom: 15px;
+  
   margin-left: 20px;
 
 }
@@ -337,18 +397,22 @@ footer ul li a
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
   height: 100px;
+  
   margin-left: 20px;
     
 }
 .fa-utensils
 {
   padding-right: 7px;
+  
   color: #fff;
 }
 .fa-hands-helping
 {
   font-size: small;
+  
   padding-right: 3px;
   color: #fff;
 }
@@ -379,8 +443,11 @@ footer ul li a
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
     width: 100%;
+    
     margin: auto;
+    
     max-width: 991px;
     
   }
@@ -399,6 +466,7 @@ footer ul li a
   #tutorial h2 
   {
     max-width: 991px;
+    
     margin: auto;
     margin-bottom: 20px;
   }
