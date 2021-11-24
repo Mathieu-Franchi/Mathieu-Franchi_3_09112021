@@ -37,20 +37,20 @@ em
 }
 /** BASES **/
 
-/************* LOGO HEADER *************/
+/************* HEADER *************/
 header 
 {
     
   width: 100%;
-
+  margin: auto;
   display: flex;
   justify-content: center;
     
   padding-bottom: 10px;
   padding-top: 20px;
   
-  
-  
+  position: relative;
+  max-width: 1024px;
   
     
 }
@@ -61,7 +61,7 @@ header nav
   position: absolute;
   margin-top: 5px;
   left:20px;
-  
+  max-width: 1024px;
 }
 
 .fa-arrow-left
@@ -75,12 +75,36 @@ header nav
   width: 200px;
   
 }
-/** MAIN **/
-#background /** image de fond **/
+
+/************** MAIN ***************/
+main 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/**** IMAGE BACKGROUND ****/
+#background
+{
+  width: 100%;
+  height: 400px;
+  
+  
+}
+#background img /** image de fond **/
 {
   width: 100%;
   height: 400px;
   object-fit: cover;
+}
+
+/***** DIV MENU *****/
+#menu
+{
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 246, 246);
 }
 
 /** FOOTER **/
