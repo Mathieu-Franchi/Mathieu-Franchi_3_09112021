@@ -74,9 +74,11 @@ em
   background-color: #ffffffe6;
   animation-name: loader;
   animation-duration: 3s;
+  
   opacity: 0;
 }
-.loader {
+.loader 
+{
   display: inline-block;
   
   position: relative;
@@ -85,73 +87,64 @@ em
   height: 80px;
   
 }
-.loader div {
+.loader div 
+{
+  /* Création des petits ronds */
   position: absolute;
-  top: 33px;
   
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   
   border-radius: 50%;
-  background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  animation-timing-function: linear;
+  
 }
-.loader div:nth-child(1) {
-  left: 8px;
+.loader div:nth-child(1)
+{
+  background-color: #9356DC;
   
-  animation: lds-ellipsis1 0.6s infinite;
+  animation: scale_circle 0.5s 5;
+  animation-delay: 0.1s;
   
-  background-color: #9356DC
+  left: 0px;
 }
-.loader div:nth-child(2) {
-  left: 8px;
-  
-  animation: lds-ellipsis2 0.6s infinite;
-  
+.loader div:nth-child(2)
+{
   background-color: #FF79DA;
+  
+  animation: scale_circle 0.5s 5;
+  animation-delay: 0.2s;
+  
+  left: 25px;
 }
-.loader div:nth-child(3) {
-  left: 32px;
-  
-  animation: lds-ellipsis2 0.6s infinite;
-  
+.loader div:nth-child(3)
+{
   background-color: #99E2D0;
   
-  z-index: 1;
+  animation: scale_circle 0.5s 5;
+  animation-delay: 0.3s;
+  
+  left: 50px;
 }
-.loader div:nth-child(4) {
-  
-  left: 56px;
-  
-  animation: lds-ellipsis3 0.6s infinite;
-  
+.loader div:nth-child(4)
+{
   background-color: #9356DC;
+  
+  animation: scale_circle 0.5s 5;
+  animation-delay: 0.4s;
+  
+  left: 75px;
 }
-@keyframes lds-ellipsis1 {
+/** CREATION ANIMATION **/
+@keyframes scale_circle 
+{
   0% {
-    transform: scale(0);
-  }
-  100% {
     transform: scale(1);
   }
-}
-@keyframes lds-ellipsis3 {
-  0% {
-    transform: scale(1);
-  }
   100% {
-    transform: scale(0);
+    transform: scale(0.5);
   }
 }
-@keyframes lds-ellipsis2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
-
 
 /************* LOGO HEADER *************/
 header 
@@ -450,52 +443,53 @@ header
 {
   transition: all 400ms ease;
   opacity: 1;
+  
 }
 /*** ANIMATION COEUR ***/
 @keyframes progressheart {
   0%
   {
-    opacity: 0.1;
+    transform: scale(0.1);
   }
   10%
   {
-    opacity: 0.2;
+    transform: scale(0.2);
   }
   20%
   {
-    opacity: 0.3;
+    transform: scale(0.3);
   }
   30%
   {
-    opacity: 0.4;
+    transform: scale(0.4);
   }
   40%
   {
-    opacity: 0.5;
+    transform: scale(0.5);
   }
   50%
   {
-    opacity: 0.5;
+    transform: scale(0.6);
   }
   60%
   {
-    opacity: 0.6;
+    transform: scale(0.7);
   }
   70%
   {
-    opacity: 0.7;
+    transform: scale(0.8);
   }
   80%
   {
-    opacity: 0.8;
+    transform: scale(0.85);
   }
   90%
   {
-    opacity: 0.9;
+    transform: scale(0.9);
   }
   100%
   {
-    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -511,12 +505,6 @@ header
   padding-top: 45px;
   padding-bottom: 30px;
 }
-
-
-
-
-
-
 
 /** PLACEMENT DE " NOUVEAU " **/
 .new
