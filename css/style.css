@@ -72,6 +72,7 @@ em
   height: 100%;
   
   background-color: #ffffffe6;
+  
   animation-name: loader;
   animation-duration: 3s;
   
@@ -439,7 +440,7 @@ header
   transition: all 400ms ease;
   
 }
-.hearts:hover .fa-heart::after
+.hearts:hover .heart_two::after
 {
   transition: all 400ms ease;
   opacity: 1;
