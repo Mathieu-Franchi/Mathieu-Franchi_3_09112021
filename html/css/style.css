@@ -232,26 +232,77 @@ main
   
   padding-top: 15px;
   padding-bottom: 15px;
+
+  position: relative;
 }
 .menu h3
 {
   margin-left: 10px;
   margin-bottom: 5px;
 }
-#menu .article_row
+.menu .article_row
 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   
-  margin-right: 20px;
+  height: 20px;
+  
+}
+.description
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
   margin-left: 10px;
   
+  flex: 1;
 }
 .price
 {
   font-weight: 700;
+}
+/** ANIMATION GREEN CHECK **/
+.animation-check-circle
+{
+  width:0%;
+  height: 78px;
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #99E2D0;
+  border-radius:0px 15px 15px 0px;
+  
+  transition: 0.4s;
+  
+  cursor: pointer;		
+  
+  margin-left: 10px;
+  margin-bottom: 27px;
+  
+}
+article:hover .animation-check-circle
+{
+	width: 17%;
+
+}
+
+.fa-check-circle
+{
+	color:white;
+	margin: auto;
+	font-size: 25px;
+	transform: scale(0);
+	transition: 0.4s;
+}
+
+article:hover .fa-check-circle
+{
+	transform: scale(1) rotate(360deg);	
 }
 
 /** BOUTON COMMANDER **/
@@ -280,7 +331,8 @@ main
   width: 100%;
  
 }
-/** FOOTER **/
+
+/****** FOOTER ******/
 footer
 {
   background-color: rgb(53, 53, 53);
