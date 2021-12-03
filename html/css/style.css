@@ -232,8 +232,8 @@ main
   
   padding-top: 15px;
   padding-bottom: 15px;
-
- 
+  
+  
 }
 .menu h3
 {
@@ -312,6 +312,41 @@ main
 {
 	transform: scale(1) rotate(360deg);	
 }
+
+/** ANIMATION ITEM APPEARS **/
+@keyframes item_appear 
+{
+  0%
+  {
+    transform: scale(0);
+    opacity: 0;
+  }
+  
+  100%
+  {
+    transform: scale(1.0);
+    opacity: 1;
+  }
+}
+#entree .menu
+{
+  animation: item_appear 1s 1;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+#dishes .menu
+{ 
+  animation: item_appear 1s 1;
+  animation-delay: 0.35s;
+  animation-fill-mode: both;
+}
+#dessert .menu
+{
+  animation: item_appear 1s 1;
+  animation-delay: 0.45s;
+  animation-fill-mode: both;
+}
+
 
 
 .menu:hover  h3
