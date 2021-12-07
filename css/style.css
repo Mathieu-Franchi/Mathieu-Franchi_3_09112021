@@ -106,13 +106,13 @@ em
   
   animation: scale_circle 0.5s 5;
   animation-delay: 0.1s;
-  
+  animation-fill-mode: both;
   left: 0px;
 }
 .loader div:nth-child(2)
 {
   background-color: #FF79DA;
-  
+  animation-fill-mode: both;
   animation: scale_circle 0.5s 5;
   animation-delay: 0.2s;
   
@@ -121,7 +121,7 @@ em
 .loader div:nth-child(3)
 {
   background-color: #99E2D0;
-  
+  animation-fill-mode: both;
   animation: scale_circle 0.5s 5;
   animation-delay: 0.3s;
   
@@ -130,7 +130,7 @@ em
 .loader div:nth-child(4)
 {
   background-color: #9356DC;
-  
+  animation-fill-mode: both;
   animation: scale_circle 0.5s 5;
   animation-delay: 0.4s;
   
